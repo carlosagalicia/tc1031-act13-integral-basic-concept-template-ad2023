@@ -1,8 +1,8 @@
 ![Tec de Monterrey](images/logotecmty.png)
-# Act 1.3 - Actividad Integral de Conceptos Básicos y Algoritmos Fundamentales (Evidencia Competencia)
+# Act 1.3 - Comprehensive Activity on Basic Concepts and Fundamental Algorithms (Competency Evidence)
 
-## <span style="color: rgb(26, 99, 169);">¿Qué tengo que hacer?</span>
-En este repositorio encontrarás los archivos de entrada, así como las salidas esperadas que podrás usar para probar tu implementación. También encontrarás un archivo "main.cpp". Ahí deberás implementar tu solución. En el archivo deberás colocar en la parte superior, en comentarios, tus datos. Por ejemplo:
+## <span style="color: rgb(26, 99, 169);">What Do I Have to Do?</span>
+In this repository, you will find the input files as well as the expected outputs to test your implementation. You will also find a "main.cpp" file. You must implement your solution in this file. At the top of the file, include your personal information in comments. For example:
 ```
 // =========================================================
 // File: main.cpp
@@ -10,19 +10,19 @@ En este repositorio encontrarás los archivos de entrada, así como las salidas 
 // Date: 01/01/2021
 // =========================================================
 ```
-<span style="text-decoration: underline;">De manera individual</span>, desarrolla la solución del siguiente problema:
+<span style="text-decoration: underline;">Individually</span>, develop the solution for the following problem:
 
-Una medida de "desorden" en una secuencia es el número de pares de entradas que están desordenadas entre sí. Por ejemplo, en la secuencia de letras “DAABEC”, esta medida es 5, ya que D es mayor que cuatro letras a su derecha y E es mayor que una letra a su derecha. Esta medida se llama el número de inversiones en la secuencia. La secuencia "AACEDGG" tiene solo una inversión (E y D), está casi ordenada, mientras que la secuencia "ZWQM" tiene 6 inversiones (es tan desordenada como puede ser, exactamente lo contrario de ordenada).
+A measure of "disorder" in a sequence is the number of pairs of entries that are out of order relative to each other. For example, in the sequence of letters “DAABEC,” this measure is 5, since D is greater than four letters to its right, and E is greater than one letter to its right. This measure is called the number of inversions in the sequence. The sequence "AACEDGG" has only one inversion (E and D) and is almost sorted, while the sequence "ZWQM" has 6 inversions (it is as disordered as possible, exactly the opposite of sorted).
 
-Eres responsable de catalogar una secuencia de cadenas de ADN (secuencias que contienen solo las cuatro letras A, C, G y T). Sin embargo, desea catalogarlos, no en orden alfabético, sino en orden de "clasificación", de "más ordenados" a "menos ordenados". Todas las cuerdas son de la misma longitud.
+You are responsible for cataloging a sequence of DNA strings (sequences containing only the four letters A, C, G, and T). However, you want to catalog them not alphabetically but by "rank," from "most ordered" to "least ordered." All strings are of the same length.
 
-## <span style="color: rgb(26, 99, 169);">**Entrada**</span>
-La primera línea contiene dos números enteros: un número entero positivo n (0 < n <= 50) que da la longitud de las cadenas; y un entero positivo m (0 < m <= 100) dando el número de cadenas. Estos son seguidos por m líneas, cada una de las cuales contiene una cadena de longitud n.
+## <span style="color: rgb(26, 99, 169);">**Input**</span>
+The first line contains two integers: a positive integer *n* (0 < *n* <= 50), which gives the length of the strings; and a positive integer *m* (0 < *m* <= 100), giving the number of strings. These are followed by *m* lines, each containing a string of length *n*.
 
-## <span style="color: rgb(26, 99, 169);">**Salida**</span>
-Genera la lista de cadenas de entrada, ordenadas de "más ordenadas" a "menos ordenadas". Si dos o más cadenas están igualmente ordenadas, enumérelas en el mismo orden en que están en el archivo de entrada.
+## <span style="color: rgb(26, 99, 169);">**Output**</span>
+Generate the list of input strings, sorted from "most ordered" to "least ordered." If two or more strings are equally ordered, list them in the same order as they appear in the input file.
 
-## <span style="color: rgb(26, 99, 169);">**Ejemplo de entrada**</span>
+## <span style="color: rgb(26, 99, 169);">**Sample Input**</span>
 ```
 10 6
 AACATGAAGG
@@ -32,8 +32,7 @@ GATCAGATTT
 CCCGGGGGGA
 ATCGATGCAT
 ```
-
-## <span style="color: rgb(26, 99, 169);">**Ejemplo de salida**</span>
+## <span style="color: rgb(26, 99, 169);">**Sample Output**</span>
 ```
 CCCGGGGGGA
 AACATGAAGG
@@ -43,37 +42,35 @@ TTTTGGCCAA
 TTTGGCCAAA
 ```
 
-Para probar tu implementación, compila tu programa con el comando:
+To test your implementation, compile your program with the command:
 ```
 g++ -std=c++11 main.cpp -o app
 ```
-Posteriormente, prueba con cada uno de los archivos de entrada de prueba que encontrarás en este repositorio (input1.txt, input2.txt, input3.txt, input4.txt). Los resultados que debes obtener se encuentran en los archivos llamados output1.txt, output1.txt, output1.txt y output1.txt. Para realizar las pruebas, puedes usar las siguientes líneas de código. Por ejemplo, si queremos probar con el archivo de prueba "input1.txt".
+Then, test your solution with each of the input files provided in this repository (`input1.txt`, `input2.txt`, `input3.txt`, `input4.txt`). The expected results are in the files `output1.txt`, `output2.txt`, `output3.txt`, and `output4.txt`. To perform the tests, you can use the following commands. For example, to test with the file "input1.txt":
 ```
 ./app < input1.txt > mysolution1.txt
 diff mysolution1.txt output1.txt
 ```
-Si el segundo comando no tenga ninguna salida, sabrás que los resultados que obtuviste son los esperados. 
+If the second command produces no output, you know your results are as expected.
 
-Por último, realiza una investigación y reflexión en forma individual de la importancia y eficiencia del uso de los diferentes algoritmos de ordenamiento y búsqueda en una situación problema de esta naturaleza, generando un documento llamado **"ReflexAct1.3.pdf"**
+Finally, conduct individual research and reflection on the importance and efficiency of different sorting and searching algorithms in a problem situation like this, generating a document titled **"ReflexAct1.3.pdf"**.
 
-## <span style="color: rgb(26, 99, 169);">**¿Bajo qué criterios se evalúa mi evidencia?**</span>
+## <span style="color: rgb(26, 99, 169);">**How Is My Evidence Evaluated?**</span>
 
-- **80%** - Para cada una de las funcionalidades se evaluará:
+- **80%** - For each functionality, the evaluation will be:
+    - **Excellent (80%)** - correctly passes all test cases.
+    - **Very Good (60%)** - correctly passes 75% of test cases.
+    - **Good (40%)** - correctly passes 50% of test cases.
+    - **Insufficient (20%)** - correctly passes less than 50% of test cases.
 
-    - **Excelente (80%)** - pasa correctamente todos los casos de prueba.
-    - **Muy Bien (60%)** - pasa correctamente el 75% de los casos de prueba.
-    - **Bien (40%)** - pasa correctamente el 50% de los casos de prueba.
-    - **Insuficiente (20%)** - pasa correctamente menos del 50% de los casos de prueba.
+- **10%** - The code must follow the coding standards specified in the document: <span class="instructure_file_holder link_holder">[coding_standard_link](estandar.pdf)</span>.
+- **10%** - Function names in the application must be respected.
 
-
-- **10%** - El código deberá seguir los lineamientos estipulados en el estándar de codificación: <span class="instructure_file_holder link_holder">[liga_estándar_codificación](estandar.pdf)</span>
-- **10%** - Se respetenan los nombres de las funciones en la aplicación.
-
-## <span style="color: rgb(26, 99, 169);">**¿Dónde la entrego?**</span>
-Esta actividad forma parte tanto de tu calificación final del curso, así como del portafolio de evidencias de las competencias a desarrollar del curso, por lo que se te pide que en forma individual:
-* Realices una entrega de  los archivos correspondientes de los algoritmos de ordenamiento y búsqueda, en la sección correspondiente dentro de esta plataforma, así como el documento de reflexión individual (**ReflexAct1.3.pdf**).
-* Generes una carpeta en forma personal llamada **TC1031(Portafolio_Final)** que servirá como preparación para la entrega del portafolio de competencias que se realizará al final del curso, esta carpeta debe contener 5 carpetas:
-    * **Act1.3** - coloca aquí tus archivos que solucionaron la <span style="text-decoration: underline;">actividad 1.3</span> así como el documento de reflexión individual (**ReflexAct1.3.pdf**).
+## <span style="color: rgb(26, 99, 169);">**Where Do I Submit It?**</span>
+This activity is part of your final course grade as well as the portfolio of evidence for the competencies to be developed in the course. Therefore, individually:
+* Submit the corresponding files for the sorting and searching algorithms in the appropriate section of this platform, along with the individual reflection document (**ReflexAct1.3.pdf**).
+* Create a personal folder named **TC1031(Final_Portfolio)** to prepare for the portfolio of competencies submission at the end of the course. This folder must contain 5 subfolders:
+    * **Act1.3** - place your files that solved <span style="text-decoration: underline;">activity 1.3</span> along with the individual reflection document (**ReflexAct1.3.pdf**).
     * Act2.3
     * Act3.4
     * Act4.3
